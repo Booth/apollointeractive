@@ -1,0 +1,235 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* helper classes   mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+.no-margin { margin:0;}
+.justify { text-align:justify;}
+
+.icon {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.icon-arrow {
+	background: url(/img/sprite.png) -4px -21px no-repeat;
+	width:15px;
+	height:13px;
+}
+
+/*markup  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+body {
+	font:17px/1.3em 'Abel', Helvetica, sans-serif;
+	color:#fff;
+	padding: 97px 0 40px;
+}
+
+sup { line-height:0; font-size:8px; }
+h1 sup { top:-16px;}
+
+h1, h2, h3, h4 { color:#ffff00;}
+
+h1 { font-size:32px; line-height:34px;}
+h2 {font-size:28px; line-height:30px;}
+
+/*structure  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+.container { margin:0;}
+
+.navbar-inner {
+	min-height:30px;
+}
+
+.navbar-inverse .navbar-inner {
+	-webkit-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, .25);
+	box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, .25);
+	border:none;
+}
+
+.navbar li {
+	line-height:30px;	
+}
+
+.navbar li a {
+	font-size:16px;
+}
+
+.navbar .nav > li > a {
+	padding:0 27px;
+	color:#ccc;
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+	color: white;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#side_nav ul {
+	list-style:none;	
+	margin:0; padding:0;
+}
+#side_nav ul > li {
+	line-height:19px;
+	height:19px;
+	float:left; clear:left;
+	padding:0 17px;
+	text-transform:uppercase;
+	font-size:13px;
+	position:relative; top:0; left:0;
+	margin-bottom:11px;
+}
+#side_nav ul > li:last-child {
+	margin-bottom:0;	
+}
+#side_nav ul > li > span {
+	border-right:4px solid #33ccff;
+	background:#000000;
+	width:0;
+	height:19px;
+	display:block;
+	position:absolute; top:0; left:0;
+	-webkit-transition: width 250ms ease-out;
+	-moz-transition: width 250ms ease-out;
+	-ms-transition: width 250ms ease-out;
+	-o-transition: width 250ms ease-out;
+	transition: width 250ms ease-out;
+}
+	#side_nav ul > li:hover > span {
+		width:100%;
+		-webkit-transition: width 250ms ease-in;
+		-moz-transition: width 250ms ease-in;
+		-ms-transition: width 250ms ease-in;
+		-o-transition: width 250ms ease-in;
+		transition: width 250ms ease-in;
+	}
+	#side_nav a { 
+		color:#ffffff;
+		display:block;
+		width:100%;
+		line-height:19px;
+		position:relative; top:0; left:0;
+		z-index:9;
+	}
+		#side_nav a:hover { text-decoration:none;}
+
+#main_content article {
+	width:342px;
+	min-height:418px;
+	padding:30px 38px;
+	border:1px solid #ccc;
+	background: url(/img/bg_op60.png) 0 0 repeat;
+}
+	#main_content article > h2 {
+		margin-bottom:20px;	
+	}
+	#main_content article > nav {
+		line-height:29px;	
+	}
+		#main_content article > nav.arrow-nav > ul {
+			list-style:none;
+			margin:0; padding:0;
+		}
+			#main_content article > nav.arrow-nav > ul > li {
+				padding-bottom:3px;
+				border-bottom:1px dashed #ccc;
+				margin-bottom:6px;
+				position:relative; top:0; left:0;
+				background: url(/img/bg_op60.png) 0 -50px no-repeat;
+				-webkit-transition: background-position 250ms ease-out 150ms;
+				-moz-transition: background-position 250ms ease-out 150ms;
+				-ms-transition: background-position 250ms ease-out 150ms;
+				-o-transition: background-position 250ms ease-out 150ms;
+				transition: background-position 250ms ease-out 150ms;
+			}
+			#main_content article > nav.arrow-nav > ul > li:hover {
+				background: url(/img/bg_op60.png) 0 -21px no-repeat;
+				-webkit-transition: background-position 200ms ease-in;
+				-moz-transition: background-position 200ms ease-in;
+				-ms-transition: background-position 200ms ease-in;
+				-o-transition: background-position 200ms ease-in;
+				transition: background-position 200ms ease-in;
+			}
+				#main_content article > nav.arrow-nav > ul > li:hover .icon-arrow {
+					background: url(/img/sprite.png) -4px -4px no-repeat;
+					-webkit-transition: background-position 200ms ease-in;
+					-moz-transition: background-position 200ms ease-in;
+					-ms-transition: background-position 200ms ease-in;
+					-o-transition: background-position 200ms ease-in;
+					transition: background-position 200ms ease-in;
+				}
+			#main_content article > nav.arrow-nav > ul > li:last-child {
+				padding-bottom:0;
+				border-bottom:none;
+				margin-bottom:0;	
+			}
+				#main_content article > nav.arrow-nav a {
+					height:29px;
+					line-height:29px;
+					color:#fff;
+					display:inline-block;
+					width:100%;
+					text-indent:8px;
+				}
+					#main_content article > nav.arrow-nav a:hover {
+						color:#fff;
+						text-decoration:none;
+					}
+	.arrow-nav .icon-arrow {
+		position:absolute; top:8px; right:8px;
+		-webkit-transition: background-position 250ms ease-out 150ms;
+		-moz-transition: background-position 250ms ease-out 150ms;
+		-ms-transition: background-position 250ms ease-out 150ms;
+		-o-transition: background-position 250ms ease-out 150ms;
+		transition: background-position 250ms ease-out 150ms;
+	}
+
+footer {
+	font-size:12px;
+	line-height:15px;
+	text-shadow: 1px 1px 1px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:right;
+	margin-top:68px;
+}
+	footer a {
+		color:#ffffff;
+		margin-left:19px;
+		height:15px;
+		padding:0 5px;	
+		display:inline-block;
+		background: url(/img/bg_op60.png) -500px 0 no-repeat;
+		-webkit-transition: all 250ms ease-out;
+		-moz-transition: all 250ms ease-out;
+		-ms-transition: all 250ms ease-out;
+		-o-transition: all 250ms ease-out;
+		transition: all 250ms ease-out;
+	}
+	footer a:hover {
+		color:#ffff00;
+		text-decoration:none;
+		background: url(/img/bg_op60.png) 0 0 no-repeat;
+		-webkit-transition: all 250ms ease-in;
+		-moz-transition: all 250ms ease-in;
+		-ms-transition: all 250ms ease-in;
+		-o-transition: all 250ms ease-in;
+		transition: all 250ms ease-in;
+	}
+
+/*homepage  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+#pg_home .navbar-inverse .navbar-inner {
+	background: url(/img/bg_op30.png) 0 0 repeat;
+}
+
+#home_seo {
+	padding-top:13px;
+}
+
+
+
+
+
